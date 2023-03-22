@@ -9,3 +9,5 @@ This is an example file for reflection in IBI1_2019-20.
 During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
 
 I have also learnt to write careful instructions when communicating online!
+
+i think this task is challenging and interesting. Since it takes a lot of time, maybe i can't upload my assessment on time, please forgive me. And i wonder if the mark will affect our final exam result? Please give me some time to catch up with.

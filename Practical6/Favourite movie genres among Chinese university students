@@ -1,1 +1,21 @@
 
+Python 3.11.2 (v3.11.2:878ead1ac1, Feb  7 2023, 10:02:41) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> my_dict={}
+>>> Movie genre = {'Comedy':73, 'Action':42, 'Romance':38, 'Fantasy':28, 'Science-fiction':22, 'Horror':19, 'Crime':18, 'Documentary':12, 'History':8, 'War':7}
+SyntaxError: invalid syntax
+>>> Movies = {'Comedy':73, 'Action':42, 'Romance':38, 'Fantasy':28, 'Science-fiction':22, 'Horror':19, 'Crime':18, 'Documentary':12, 'History':8, 'War':7}
+>>> import matplotlib.pyplot as plt
+>>> labels = 'Comedy', 'Action', 'Romance', 'Fantasy', 'Science-fiction', 'Horror', 'Crime', 'Documentary', 'History', 'War'
+>>> sizes = [73, 42, 38, 28, 22, 19, 18, 12, 8, 7]
+>>> explode = (0,0,0,0,0,0,0,0,0,0)
+>>> plt.pie
+<function pie at 0x120bda700>
+>>> plt.axis('equal')
+(-0.05500000000000001, 0.05500000000000001, -0.05500000000000001, 0.05500000000000001)
+>>> plt.show()
+>>> plt.pie(sizes,explode=explode, labels=labels,autopct=None, shadow= False, startangle=90)
+([<matplotlib.patches.Wedge object at 0x120bbf7d0>, <matplotlib.patches.Wedge object at 0x1260bc4d0>, <matplotlib.patches.Wedge object at 0x1260ab350>, <matplotlib.patches.Wedge object at 0x1260beed0>, <matplotlib.patches.Wedge object at 0x1260cc350>, <matplotlib.patches.Wedge object at 0x1260cd850>, <matplotlib.patches.Wedge object at 0x1260ced90>, <matplotlib.patches.Wedge object at 0x1260d8310>, <matplotlib.patches.Wedge object at 0x1260cc450>, <matplotlib.patches.Wedge object at 0x1260daad0>], [Text(-0.8328636685943582, 0.718566705000689, 'Comedy'), Text(-0.8814759932449755, -0.6580274107761652, 'Action'), Text(0.01294258935227057, -1.0999238561740803, 'Romance'), Text(0.7801020736708183, -0.7755261147469437, 'Fantasy'), Text(1.0793346211031076, -0.2122186977818197, 'Science-fiction'), Text(1.0546097700877033, 0.31272709002509197, 'Horror'), Text(0.8243514015881876, 0.728316391892693, 'Crime'), Text(0.5217439578926358, 0.9683920912536036, 'Documentary'), Text(0.28157428813020047, 1.0633512685204127, 'History'), Text(0.09049787281101478, 1.09627101348922, 'War')])
+>>> plt.axis('equal')
+(-1.0999994088112746, 1.099999955599562, -1.0999999989028706, 1.0999999999477557)
+>>> plt.show()

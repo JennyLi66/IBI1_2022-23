@@ -245,3 +245,30 @@ covid_data['location']=='Afghanistan'
 7995    False
 Name: location, Length: 7996, dtype: bool
 
+import numpy as np
+new_cases_mean=np.mean(new_data[new_data['date']=='2020-03-31']['new_cases'])
+new_deaths_mean=np.mean(new_data[new_data['date']=='2020-03-31']['new_deaths'])
+print(new_cases_mean)
+640.4615384615385
+print(new_deaths_mean)
+37.92820512820513
+print(new_data)
+            date  new_cases  new_deaths
+81    2020-03-31         27           0
+104   2020-03-31         11           2
+191   2020-03-31         57           2
+209   2020-03-31         36           2
+219   2020-03-31          0           0
+...          ...        ...         ...
+7791  2020-03-31         16           2
+7879  2020-03-31          1           0
+7971  2020-03-31      62445        3698
+7984  2020-03-31          6           0
+7995  2020-03-31          0           0
+
+[195 rows x 3 columns]
+mean_values=np.mean(new_data[new_data['date']=='2020-03-31'][['new_cases','new_deaths']],axis=0)
+print(mean_values)
+new_cases     640.461538
+new_deaths     37.928205
+dtype: float64

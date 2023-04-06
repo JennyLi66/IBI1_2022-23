@@ -214,3 +214,34 @@ print(row)
 
 [82 rows x 6 columns]
 
+covid_data[covid_data['location']=='Afghanistan']
+                
+          date     location  new_cases  new_deaths  total_cases  total_deaths
+0   2019-12-31  Afghanistan          0           0            0             0
+1   2020-01-01  Afghanistan          0           0            0             0
+2   2020-01-02  Afghanistan          0           0            0             0
+3   2020-01-03  Afghanistan          0           0            0             0
+4   2020-01-04  Afghanistan          0           0            0             0
+..         ...          ...        ...         ...          ...           ...
+77  2020-03-27  Afghanistan          0           0           75             1
+78  2020-03-28  Afghanistan         16           1           91             2
+79  2020-03-29  Afghanistan         15           1          106             3
+80  2020-03-30  Afghanistan          8           1          114             4
+81  2020-03-31  Afghanistan         27           0          141             4
+
+[82 rows x 6 columns]
+covid_data['location']=='Afghanistan'
+                
+0        True
+1        True
+2        True
+3        True
+4        True
+        ...  
+7991    False
+7992    False
+7993    False
+7994    False
+7995    False
+Name: location, Length: 7996, dtype: bool
+

@@ -272,3 +272,20 @@ print(mean_values)
 new_cases     640.461538
 new_deaths     37.928205
 dtype: float64
+
+import matplotlib.pyplot as plt
+fig,(ax1,ax2)=plt.subplots(1,2,figsize=(10,5))
+ax1.boxplot(data_31_Mar['new_cases'])
+{'whiskers': [<matplotlib.lines.Line2D object at 0x13d02fe50>, <matplotlib.lines.Line2D object at 0x13d03d050>], 'caps': [<matplotlib.lines.Line2D object at 0x138b2df50>, <matplotlib.lines.Line2D object at 0x13cfff9d0>], 'boxes': [<matplotlib.lines.Line2D object at 0x138aaddd0>], 'medians': [<matplotlib.lines.Line2D object at 0x13d038ad0>], 'fliers': [<matplotlib.lines.Line2D object at 0x13d01aa90>], 'means': []}
+ax2.boxplot(data_31_Mar['new_deaths'])
+{'whiskers': [<matplotlib.lines.Line2D object at 0x11d552550>, <matplotlib.lines.Line2D object at 0x13d03ddd0>], 'caps': [<matplotlib.lines.Line2D object at 0x13d03e2d0>, <matplotlib.lines.Line2D object at 0x13d03f6d0>], 'boxes': [<matplotlib.lines.Line2D object at 0x13d02c910>], 'medians': [<matplotlib.lines.Line2D object at 0x13d054390>], 'fliers': [<matplotlib.lines.Line2D object at 0x13d054e90>], 'means': []}
+# 设置箱型图标题和x轴标签
+ax1.set_title('New Cases on 31 Mar')
+Text(0.5, 1.0, 'New Cases on 31 Mar')
+ax1.set_xlabel('Cases')
+Text(0.5, 51.44444444444443, 'Cases')
+ax2.set_title('New Deaths on 31 Mar')
+Text(0.5, 1.0, 'New Deaths on 31 Mar')
+ax2.set_xlabel('Deaths')
+Text(0.5, 51.44444444444443, 'Deaths')
+plt.show()

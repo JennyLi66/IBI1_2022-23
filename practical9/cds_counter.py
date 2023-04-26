@@ -1,15 +1,13 @@
 seq = 'ATGCAATCGACTACGATCTGAGGGCCTAA'
-start_index = seq.find('ATG')
-coding_seq_count = 0
-while start_index < len(seq):
-    stop_index = seq.find('TAA', start_index + 3)
-    stop_index = min(stop_index, seq.find('TAG', start_index + 3))
-    stop_index = min(stop_index, seq.find('TGA', start_index + 3))
-    if stop_index != -1:
-        coding_seq_count += 1
-        start_index = seq.find('ATG', stop_index + 3)
+start_codon = 'ATG'
+stop_codons = ['TAA', 'TAG', 'TGA']
+for i in range(len(seq)):
+    if seq[i:i+3] == start_codon:
+        for j in range(i+3,len(seq), 3):
+            if seq[j:j+3] in stop_codons:
+                if (j-i) % 3 == 0:
+                    coding_seq_count += 1
+                break
 
-    else:
-        break
-
-print('Total count of possible coding sequences:', coding_seq_count)
+            
+print('total count of possible coding sequences:' , coding_seq_count)
